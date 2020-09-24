@@ -2,16 +2,16 @@ CC:=g++
 
 .PHONY: clean
 
-all: strange_counter
+all: solution
 
-strange_counter: main.cpp
+solution: main.cpp
 	$(CC) -o $@ $<
 
 clean:
-	rm -rf strange_counter *.txt
+	rm -rf solution
 
-test: strange_counter
-	./strange_counter 1
-	./strange_counter 6
-	./strange_counter 9
-	./strange_counter 15
+test: solution
+	./solution 1
+	./solution 6
+	./solution 9
+	./solution 15
